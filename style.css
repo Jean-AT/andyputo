@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco para que contraste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para que el footer se quede abajo */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    flex-grow: 1; /* Para que el contenido principal ocupe el espacio restante */
+    text-align: center;
+    padding: 20px;
+}
+
+main img {
+    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen */
+}
+
+footer {
+    background-color: #1a1a1a; /* Un gris oscuro para el footer */
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px; /* Limita el ancho del contenedor de contacto */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px;
+}
+
+.contact-button {
+    background-color: #28a745; /* Color verde para WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+    display: block; /* Cada botón en su propia línea */
+    width: fit-content; /* Ajusta el ancho al contenido */
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.contact-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-button:last-child {
+    background-color: #007bff; /* Color azul para Facebook */
+}
+
+/* Media Queries para que se vea bien en diferentes tamaños de pantalla */
+@media (min-width: 768px) { /* Para pantallas de tablets y PCs */
+    .contact-button {
+        display: inline-block; /* Los botones uno al lado del otro en pantallas más grandes */
+        width: auto; /* Ancho automático */
+    }
+}
